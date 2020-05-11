@@ -1,0 +1,6 @@
+// urutan sangat diperhatikan
+@import './base/settings'; //harus di paling atas
+@import './base/base';
+@import './components/header';
+@import './components/home';
+@import './components/podcaster';

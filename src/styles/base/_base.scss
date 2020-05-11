@@ -1,0 +1,42 @@
+html {
+    font-size: 62.5%; // make rem 10 base
+}
+
+body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: $m-size; // == 16px
+    background: #0E141B;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+h1 {
+    margin: auto;
+    color: white;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+h2 {
+    margin: auto;
+    color: white;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.is-active {
+    font-weight: bold;
+    color: white;
+}
+
+.clear {
+    clear: both;
+}
