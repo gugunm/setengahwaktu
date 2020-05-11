@@ -71,8 +71,8 @@ class HomePage extends React.Component {
                     { listEps.length === 0 ? console.log("Kosong") : 
                         listEps.map((eps, index) =>(
                             <div className="eps" onClick={() => {this.setState({ playNoEps: index})}}>
-                                <span id="nomor col-sm-1">Eps. {index+1}</span>
-                                <a className="episode col-sm-10" >
+                                <span id="nomor col-sm-2">Eps {index+1}.</span>
+                                <a className="episode col-sm-9" >
                                     <p>{eps.judul}</p>
                                 </a>
                                 <span id="btn-play col-sm-1">

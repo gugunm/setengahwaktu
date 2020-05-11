@@ -1,5 +1,12 @@
-h2 {
-    margin-bottom: 40px;
+.podcaster{
+    h2 {
+        margin-bottom: 20px;
+        margin-top: 30px;
+        font-weight: bold;
+    }
+    hr {
+        margin-bottom: 40px;
+    }
 }
 
 .team{
@@ -13,6 +20,7 @@ h2 {
     }
     h3{
         margin-bottom: 10px;
+        
     }
     p {
         margin-bottom: 20px;

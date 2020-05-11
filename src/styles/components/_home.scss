@@ -26,6 +26,7 @@
         color: white;
         margin: auto 0;
         font-weight: bold;
+        width: 120px;
     }
     #nomor {
         text-align: right;
@@ -54,10 +55,6 @@
     }
     hr {
         width:50%;
-        text-align:center;
-        margin:auto;
-        height:0.01em;
-        background-color: rgba($color: #ffffff, $alpha: 1.0);
     }
     h2 {
         margin-top: 30px;

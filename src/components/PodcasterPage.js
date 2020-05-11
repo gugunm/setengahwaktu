@@ -6,7 +6,7 @@ class PodcasterPage extends React.Component {
             {
                 nama: "Hennika Arum",
                 foto: "./images/henni.jpg",
-                desc: "Coffee addict and traveler",
+                desc: "Memiliki hoby ngepoin orang",
                 ig: "https://www.instagram.com/hennika9897/",
                 tumblr: "http://henniarum.tumblr.com/",
                 twitter: ""
@@ -22,7 +22,7 @@ class PodcasterPage extends React.Component {
             {
                 nama: "Haudifia Dwinda",
                 foto: "./images/fia.jpg",
-                desc: "Fvckboy meen",
+                desc: "Perempuan yang suka bermain kucing",
                 ig: "https://www.instagram.com/fiadwindaa/",
                 tumblr: "",
                 twitter: ""
@@ -30,7 +30,7 @@ class PodcasterPage extends React.Component {
             {
                 nama: "Muhamad Ihsan",
                 foto: "./images/ihsan.jpg",
-                desc: "Fvckboy meen",
+                desc: "Manusia dengan 1001 cara untuk mendapatkan apapun",
                 ig: "https://www.instagram.com/ihsanmuhamad/",
                 tumblr: "",
                 twitter: ""
@@ -42,7 +42,8 @@ class PodcasterPage extends React.Component {
         const {teams} = this.state
         return (
             <div className="podcaster container col-md-5">
-                <h2>From The Podcaster Page</h2>
+                <h2>Here We Are as Your Host</h2>
+                <hr></hr>
                 {teams.map((team) => (
                     <div className="team">
                         <img src={team.foto} />
