@@ -8,42 +8,43 @@
 
 .eps{
     display: flex;
-    padding: 20px;
+    padding: 15px 20px;
     justify-content: space-between;
-    background-color: rgba($color: #fff, $alpha: 0.1);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
     &:hover{
-        background-color: rgba($color: #fff, $alpha: 0.8);
-        span, p{
-            color: #333333;
-            font-weight: bold;
-        }
+        background-color: rgba($color: #fff, $alpha: 0.1);
     }
-    span{
-        color: white;
-        margin: auto 0;
-        font-weight: bold;
-        width: 120px;
+    #btn-play {
+        width: 5%;
     }
     #nomor {
-        text-align: right;
+        width: 20%;
+    }
+    span {
+        margin: auto 0;
+        text-align: left;
+        color: white;
     }
     a {
         text-align: left;
-        display: block;
+        width: 75%;
         text-decoration: none;
         p {
             color: white;
             margin: 0;
-            font-weight: bold;
+            padding-left: 10px;
+        }
+        &:active{
+            color: red($color: #000000);
         }
     }
     .fa-play{
         font-size: 18px;
         padding-right: 10px;
+        color: white;
     }
 }
 
