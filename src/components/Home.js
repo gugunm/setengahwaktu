@@ -1,5 +1,5 @@
-import React from "react";
-import axios from "axios";
+import React from 'react';
+import axios from 'axios';
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -14,7 +14,7 @@ class HomePage extends React.Component {
   componentDidMount() {
     axios
       .get(
-        "https://cors-anywhere.herokuapp.com/https://anchor.fm/api/v3/profile/1fc5514c"
+        'https://cors-anywhere.herokuapp.com/https://anchor.fm/api/v3/profile/1fc5514c'
       )
       .then((res) => {
         this.setState({
@@ -31,21 +31,20 @@ class HomePage extends React.Component {
   }
 
   replaceNbsps(str) {
-    return str.replace(/&nbsp;/g, " ");
+    return str.replace(/&nbsp;/g, ' ');
   }
 
   showPlay() {
     const eps = this.state.listEps[this.state.playNoEps];
-    const embedLink = "https://anchor.fm" + eps.shareLinkEmbedPath;
+    const embedLink = 'https://anchor.fm' + eps.shareLinkEmbedPath;
     return (
-      <div className="play">
+      <div className='play'>
         <iframe
           src={embedLink}
-          height="102px"
-          width="100%"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
+          height='102px'
+          width='100%'
+          frameborder='0'
+          scrolling='no'></iframe>
         <p>{eps.descriptionPreview}</p>
         <hr></hr>
         <h2>Playlist</h2>
@@ -56,27 +55,26 @@ class HomePage extends React.Component {
   render() {
     const { listEps } = this.state;
     return (
-      <div className="home container col-md-5">
-        {listEps.length === 0 ? "" : this.showPlay()}
-        <div className="list-eps">
+      <div className='home container col-md-5'>
+        {listEps.length === 0 ? '' : this.showPlay()}
+        <div className='list-eps'>
           {listEps.length === 0
-            ? ""
+            ? ''
             : listEps
                 .map((eps, index) => (
                   <div
-                    className="eps"
+                    className='eps'
                     onClick={() => {
                       this.setState({ playNoEps: index });
-                    }}
-                  >
-                    <span id="nomor col-sm-2">
+                    }}>
+                    <span id='nomor col-sm-2'>
                       Eps {listEps.length - index - 1}
                     </span>
-                    <a className="episode col-s-9">
+                    <a className='episode col-s-9'>
                       <p>{eps.title}</p>
                     </a>
-                    <span id="btn-play col-sm-1">
-                      <i class="fa fa-play"></i>
+                    <span id='btn-play col-sm-1'>
+                      <i class='fa fa-play'></i>
                     </span>
                   </div>
                 ))
